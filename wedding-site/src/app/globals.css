@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'SweetSansPro';
+  src: url('../../public/fonts/SweetSansProBold.otf') format('opentype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SweetSansPro';
+  src: url('../../public/fonts/SweetSansProExLight.otf') format('opentype');
+  font-weight: 200; /* Extra Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SweetSansPro';
+  src: url('../../public/fonts/SweetSansProMedium.otf') format('opentype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SweetSansPro';
+  src: url('../../public/fonts/SweetSansProRegular.otf') format('opentype');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SweetSansPro';
+  src: url('../../public/fonts/SweetSansProLight.otf') format('opentype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
