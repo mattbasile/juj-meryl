@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { getUserTypeCookie } from '@/lib/api';
+import { getUserTypeCookie } from '@/lib/utils';
 import { useRouter } from 'next/navigation';
 import HeaderImage from '../../../public/images/header-img.webp';
 import BenchImage from '../../../public/images/bench.webp';

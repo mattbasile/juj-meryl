@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import SignInImage from '../../public/images/sign-in.webp';
-import { checkInviteList, getUserTypeCookie } from '@/lib/api';
+import { checkInviteList, getUserTypeCookie } from '@/lib/utils';
 import { useRouter } from 'next/navigation';
 
 export default function Page() {
