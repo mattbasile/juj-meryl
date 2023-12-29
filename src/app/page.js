@@ -59,17 +59,19 @@ export default function Page() {
                         type="name"
                         autoComplete="name"
                         required
-                        className="bg-transparent block w-full border border-white p-2 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+                        className="bg-transparent block w-full border border-gold-100 p-2 focus:ring-2 focus:ring-inset focus:ring-gold-100 sm:text-sm sm:leading-6"
                       />
 
-                      <p className="mt-2 text-white font-bold">{errMessage}</p>
+                      <p className="mt-2 text-gold-100 font-bold">
+                        {errMessage}
+                      </p>
                     </div>
                   </div>
 
                   <div>
                     <button
                       type="submit"
-                      className="uppercase flex w-full justify-center bg-white text-gold-500 px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-gold-100 "
+                      className="uppercase flex w-full justify-center bg-gold-100 text-gold-500 px-3 py-2 text-sm font-semibold leading-6 text-gold-100 shadow-sm hover:bg-gold-100 "
                     >
                       Sign in
                     </button>

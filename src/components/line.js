@@ -15,7 +15,7 @@ import React from 'react';
          x2="0.749996"
          y2="1.09278e-08"
          stroke={color === 'light' ? '#FFFBF4' : '#8C6418'}
-         stroke-width="0.5"
+         strokeWidth="0.5"
        />
      </svg>
    );

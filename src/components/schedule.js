@@ -66,7 +66,7 @@ export default function schedule({ userType }) {
           ? VIPSchedule.map((item, index) => {
               return (
                 <div
-                  key={item.googleLink}
+                  key={item.name}
                   className={`${
                     index !== 2 ? 'border-r  border-gold-500' : ''
                   } py-[74px] flex flex-col justify-between`}
@@ -93,7 +93,7 @@ export default function schedule({ userType }) {
           : RegularSchedule.map((item, index) => {
               return (
                 <div
-                  key={item.googleLink}
+                  key={item.name}
                   className={`${
                     index !== 1 ? 'border-r  border-gold-500' : ''
                   } py-[74px]`}
