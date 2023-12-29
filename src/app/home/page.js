@@ -73,7 +73,7 @@ export default function Home() {
         }
       });
     };
-  }, []);
+  }, [router]);
 
   return (
     <div className="relative">
