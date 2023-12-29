@@ -81,7 +81,7 @@ export default function Home() {
     <div className="relative">
       <nav
         id="nav"
-        className="transition-colors duration-300	z-20 w-full fixed py-8 md:py-11 px-4 md:px-11 flex flex-col md:flex-row justify-between items-center text-gold-500"
+        className="transition-colors duration-300	z-40 w-full fixed py-8 md:py-11 px-4 md:px-11 flex flex-col md:flex-row justify-between items-center text-gold-500"
       >
         <h2 id="logo" className="font-extralight text-6xl ">
           M/J
