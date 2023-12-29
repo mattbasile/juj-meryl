@@ -99,6 +99,21 @@ export default function schedule({ userType }) {
                   } py-[74px]`}
                 >
                   <h3 className="uppercase font-bold text-3xl">{item.title}</h3>
+                  <div className="text-sm leading-6 mt-6">
+                    <p>{item.location}</p>
+                    <p>{item.address}</p>
+                    <p>{item.time}</p>
+                  </div>
+                  <p className="max-w-[400px] mx-auto text-sm leading-6 mt-6">
+                    {item.blurb}
+                  </p>
+                  <a
+                    target="_blank"
+                    href={item.googleLink}
+                    className="hover:bg-gold-500 hover:text-gold-100 transition-colors mt-6 mx-auto inline-block uppercase font-bold text-sm md:text-base py-3 px-6 border border-gold-500 "
+                  >
+                    Directions
+                  </a>
                 </div>
               );
             })}
