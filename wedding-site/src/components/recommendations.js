@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import LampLighterImage from '../../public/images/lamplighter.webp';
 import GiuliaImage from '../../public/images/giulia.webp';
 import PammysImage from '../../public/images/pammys.webp';
@@ -9,7 +9,7 @@ import ICAImage from '../../public/images/ica.webp';
 import FenwayImage from '../../public/images/fenway.webp';
 import PorterSquareImage from '../../public/images/porter-square.webp';
 
-export default function recommendations() {
+export default function Recommendations() {
   const dinnerRecs = [
     {
       name: 'Lamplighter Brewery',
@@ -106,8 +106,6 @@ export default function recommendations() {
 }
 
 function Card({ card }) {
-  const [hover, setHover] = useState(false);
-
   return (
     <a
       target="_blank"

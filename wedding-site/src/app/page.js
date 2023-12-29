@@ -8,7 +8,7 @@ import {
 } from '@/lib/api';
 import { useRouter } from 'next/navigation';
 
-export default function page() {
+export default function Page() {
   const [errMessage, setErrMessage] = useState('');
   const router = useRouter();
 
