@@ -10,7 +10,7 @@ import Line from '@/components/line';
 import Schedule from '@/components/schedule';
 import Recommendations from '@/components/recommendations';
 
-export default function home() {
+export default function Home() {
   const router = useRouter();
   const [userType, setUserType] = useState('');
   const hotels = [
@@ -178,7 +178,10 @@ export default function home() {
         <div className="grid grid-cols-1 md:grid-cols-3 max-w-[1300px] gap-y-11 md:gap-y-0 mx-auto mt-16">
           {hotels.map((hotel) => {
             return (
-              <div className="flex flex-col justify-between px-8">
+              <div
+                key={hotel.link}
+                className="flex flex-col justify-between px-8"
+              >
                 <p className="uppercase font-bold text-lg mb-4">{hotel.name}</p>
                 <p>{hotel.copy}</p>
                 <a
@@ -203,7 +206,10 @@ export default function home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-y-11 md:gap-y-0 max-w-[1300px] mx-auto mt-11">
             {faqs.map((faq) => {
               return (
-                <div className="flex flex-col justify-between px-8">
+                <div
+                  key={faq.question}
+                  className="flex flex-col justify-between px-8"
+                >
                   <p className="uppercase font-bold text-lg mb-4">
                     {faq.question}
                   </p>

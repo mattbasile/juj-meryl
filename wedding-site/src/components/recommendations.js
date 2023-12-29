@@ -90,7 +90,7 @@ export default function recommendations() {
       </p>
       <div className="px-8 md:px-[80px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {dinnerRecs.map((rec) => {
-          return <Card card={rec} />;
+          return <Card key={rec.link} card={rec} />;
         })}
       </div>
       <p className="px-8 md:px-[80px] mx-auto uppercase font-medium text-2xl mb-5 mt-10">
@@ -98,7 +98,7 @@ export default function recommendations() {
       </p>
       <div className="px-8 md:px-[80px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {toDoRecs.map((rec) => {
-          return <Card card={rec} />;
+          return <Card key={rec.link} card={rec} />;
         })}
       </div>
     </div>
