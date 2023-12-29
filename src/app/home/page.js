@@ -81,12 +81,12 @@ export default function Home() {
     <div className="relative">
       <nav
         id="nav"
-        className="transition-colors duration-300	z-20 w-full fixed py-11 px-0 md:px-11 flex flex-col md:flex-row justify-between items-center text-gold-500"
+        className="transition-colors duration-300	z-20 w-full fixed py-8 md:py-11 px-4 md:px-11 flex flex-col md:flex-row justify-between items-center text-gold-500"
       >
         <h2 id="logo" className="font-extralight text-6xl ">
           M/J
         </h2>
-        <div className="transition-[font-size] mt-8 md:mt-0 flex flex-wrap space-x-6 md:space-x-11">
+        <div className=" transition-[font-size] mt-8 md:mt-0 flex flex-wrap justify-center md:justify-even gap-y-3 md:gap-y-0 gap-x-6 md:gap-x-11">
           <a
             className="uppercase font-bold text-xs relative inline before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-gold-500 before:origin-top-left before:scale-x-0 hover:before:scale-x-100 transition-slow"
             href="#schedule"
@@ -119,7 +119,7 @@ export default function Home() {
           </a>
         </div>
       </nav>
-      <header className="grid grid-cols-1 md:grid-cols-2 h-[700px] md:h-screen">
+      <header className="grid grid-cols-1 md:grid-cols-2 h-[600px]  md:h-screen">
         <div className="hidden md:block relative w-full h-full">
           <img
             className="absolute inset-0 w-full h-full object-cover"
@@ -127,14 +127,14 @@ export default function Home() {
             alt=""
           />
         </div>
-        <div className="bg-gold-100 flex flex-col items-center md:items-start justify-center px-16">
-          <h1 className="uppercase text-gold-500 font-bold text-6xl text-center md:text-left">
+        <div className="pt-14 md:pt-0 bg-gold-100 flex flex-col text-center md:text-left items-center md:items-start justify-center px-16">
+          <h1 className="uppercase text-gold-500 font-bold text-5xl md:text-6xl text-center md:text-left">
             Meryl & Juliana
           </h1>
-          <p className="text-gold-500 font-light text-3xl mt-3">
+          <p className="text-gold-500 font-light text-xl md:text-3xl mt-3">
             November 2nd, 2024
           </p>
-          <p className="text-gold-500 font-light text-3xl mt-2">
+          <p className="text-gold-500 font-light text-xl md:text-3xl mt-2">
             Boston, Massachusetts
           </p>
         </div>
@@ -171,7 +171,7 @@ export default function Home() {
         className="py-20 md:py-[74px] bg-gold-500 text-gold-100 text-center"
       >
         <h3 className="uppercase text-4xl md:text-6xl font-bold">Hotels</h3>
-        <p className="px-8 md:px-0 max-w-[900px] mx-auto mt-4 font-extralight text-lg md:text-2xl leading-8 md:leading-10">
+        <p className="px-8 md:px-0 max-w-[900px] mx-auto mt-4 font-light text-sm md:text-2xl leading-8 md:leading-10">
           There are tons of great options in Boston. Here are a few that we
           suggest. Use the links below to access our codes for the small block
           of rooms we’ve reserved. Please try and book early to secure your
@@ -223,16 +223,16 @@ export default function Home() {
         </div>
         <Line color="dark" />
       </div>
-      <div className="w-full h-[600px] md:h-[900px] relative">
+      <div className="w-full h-[450px] md:h-[900px] relative">
         <img
           src={CheersImage.src}
-          className="absolute inset-0 object-cover w-full h-full"
+          className="absolute inset-0 object-cover object-center w-full h-full"
           alt=""
         />
       </div>
       <div
         id="registry"
-        className="h-full md:h-[744px] bg-gold-100 text-gold-500 grid grid-cols-1 md:grid-cols-2"
+        className="text-center md:text-left h-full md:h-[744px] bg-gold-100 text-gold-500 grid grid-cols-1 md:grid-cols-2"
       >
         <div className="py-24 md:py-0 px-12 md:px-28 flex flex-col justify-center">
           <h3 className="uppercase text-4xl md:text-6xl font-bold">Registry</h3>
@@ -292,7 +292,7 @@ export default function Home() {
         </div>
       </div>
       <footer className="border-t border-gold-500 bg-gold-100 text-gold-500 flex items-center justify-center py-10">
-        <div className="transition-[font-size] mt-8 md:mt-0 flex flex-wrap space-x-6 md:space-x-11">
+        <div className=" transition-[font-size] mt-8 md:mt-0 flex flex-wrap justify-center md:justify-even gap-y-3 md:gap-y-0 gap-x-6 md:gap-x-11">
           <a
             className="uppercase font-bold text-xs relative inline before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-gold-500 before:origin-top-left before:scale-x-0 hover:before:scale-x-100 transition-slow"
             href="#schedule"

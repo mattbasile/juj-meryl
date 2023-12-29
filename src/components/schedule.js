@@ -58,7 +58,7 @@ export default function schedule({ userType }) {
       <h3 className="uppercase text-4xl md:text-6xl font-bold">Schedule</h3>
 
       <div
-        className={`grid grid-cols-1 mt-11 ${
+        className={`grid grid-cols-1 mt-0 md:mt-11 ${
           userType === 'VIP' ? 'md:grid-cols-3' : 'md:grid-cols-2'
         }`}
       >
@@ -69,7 +69,7 @@ export default function schedule({ userType }) {
                   key={item.title}
                   className={`${
                     index !== 2 ? 'border-r  border-gold-500' : ''
-                  } py-[74px] flex flex-col justify-between`}
+                  }  py-12 md:py-[74px] flex flex-col justify-between`}
                 >
                   <h3 className="uppercase font-bold text-3xl">{item.title}</h3>
                   <div className="text-sm leading-6 mt-6">
@@ -77,7 +77,7 @@ export default function schedule({ userType }) {
                     <p>{item.address}</p>
                     <p>{item.time}</p>
                   </div>
-                  <p className="max-w-[400px] mx-auto text-sm leading-6 mt-6">
+                  <p className="px-8 md:px-0 max-w-[400px] mx-auto text-sm leading-6 mt-6">
                     {item.blurb}
                   </p>
                   <a
@@ -96,7 +96,7 @@ export default function schedule({ userType }) {
                   key={item.title}
                   className={`${
                     index !== 1 ? 'border-r  border-gold-500' : ''
-                  } py-[74px]`}
+                  } py-12 md:py-[74px] `}
                 >
                   <h3 className="uppercase font-bold text-3xl">{item.title}</h3>
                   <div className="text-sm leading-6 mt-6">
@@ -104,7 +104,7 @@ export default function schedule({ userType }) {
                     <p>{item.address}</p>
                     <p>{item.time}</p>
                   </div>
-                  <p className="max-w-[400px] mx-auto text-sm leading-6 mt-6">
+                  <p className="px-8 md:px-0 max-w-[400px] mx-auto text-sm leading-6 mt-6">
                     {item.blurb}
                   </p>
                   <a

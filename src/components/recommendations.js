@@ -82,10 +82,10 @@ export default function Recommendations() {
   ];
   return (
     <div className="bg-gold-500 text-gold-100 py-20" id="recommendations">
-      <h3 className="uppercase text-4xl md:text-6xl font-bold text-center">
+      <h3 className="uppercase text-3xl md:text-6xl font-bold text-center">
         Recommendations
       </h3>
-      <p className="px-8 md:px-[80px] mx-auto uppercase font-medium text-2xl mb-5 mt-10">
+      <p className="px-8 md:px-[80px] mx-auto uppercase font-medium text-lg md:text-2xl mb-5 mt-10">
         Where to eat and drink
       </p>
       <div className="px-8 md:px-[80px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -93,7 +93,7 @@ export default function Recommendations() {
           return <Card key={rec.link} card={rec} />;
         })}
       </div>
-      <p className="px-8 md:px-[80px] mx-auto uppercase font-medium text-2xl mb-5 mt-10">
+      <p className="px-8 md:px-[80px] mx-auto uppercase font-medium text-lg md:text-2xl mb-5 mt-10">
         What to do
       </p>
       <div className="px-8 md:px-[80px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -110,18 +110,18 @@ function Card({ card }) {
     <a
       target="_blank"
       href={card.link}
-      className="block w-full h-[616px] relative group p-6 transition-all"
+      className="block w-full h-[400px] md:h-[616px] relative group p-6 transition-all"
     >
       <div className="flex flex-col justify-between	relative z-20 h-full">
-        <p className="opacity-0 group-hover:opacity-100 text-xl font-base leading-10">
+        <p className="md:opacity-0 group-hover:opacity-100 text-xl font-base leading-10">
           {card.copy}
         </p>
-        <p className="uppercase text-4xl font-bold 	">{card.name}</p>
+        <p className="uppercase text-2xl md:text-4xl font-bold 	">{card.name}</p>
       </div>
       <div className="absolute inset-0 w-full h-full group">
         <div className="absolute inset-0 w-full h-full bg-black/40 z-10 group-hover:bg-black/50"></div>
         <img
-          className="absolute inset-0 w-full h-full saturate-0 group-hover:saturate-100	transition-[saturate]"
+          className="absolute inset-0 w-full h-full saturate-100 md:saturate-0 group-hover:saturate-100	transition-[saturate]"
           src={card.image}
           alt=""
         />
