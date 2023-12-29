@@ -1,15 +1,12 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import SignInImage from '../../public/images/sign-in.webp';
-import {
-  checkInviteList,
-  setUserTypeCookie,
-  getUserTypeCookie,
-} from '@/lib/api';
+import { checkInviteList, getUserTypeCookie } from '@/lib/api';
 import { useRouter } from 'next/navigation';
 
 export default function Page() {
   const [errMessage, setErrMessage] = useState('');
+
   const router = useRouter();
 
   const handleSubmit = (event) => {
@@ -34,7 +31,7 @@ export default function Page() {
         router.push('/home');
       }
     };
-  }, []);
+  }, [router]);
 
   return (
     <>
