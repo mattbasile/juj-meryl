@@ -50,30 +50,32 @@ export default function Home() {
   ];
 
   useEffect(() => {
-    return () => {
-      let cookie = getUserTypeCookie();
-      if (cookie === 'VIP') {
-        setUserType('VIP');
-      } else if (cookie === 'NIP') {
-        setUserType('NIP');
+    let cookie = getUserTypeCookie();
+    if (cookie === 'VIP') {
+      setUserType('VIP');
+    } else if (cookie === 'NIP') {
+      setUserType('NIP');
+    } else {
+      router.push('/');
+    }
+    const handleScroll = () => {
+      let nav = document.getElementById('nav');
+      if (window.scrollY > 50) {
+        nav.classList.add('bg-gold-100');
+        logo.classList.remove('text-6xl');
+        logo.classList.add('text-4xl');
       } else {
-        router.push('/');
+        nav.classList.remove('bg-gold-100');
+        logo.classList.add('text-6xl');
+        logo.classList.remove('text-4xl');
       }
-      window.addEventListener('scroll', function () {
-        let nav = document.getElementById('nav');
-        if (window.scrollY > 50) {
-          // Adjust 50 to the scroll position you want
-          nav.classList.add('bg-gold-100');
-          logo.classList.remove('text-6xl');
-          logo.classList.add('text-4xl');
-        } else {
-          nav.classList.remove('bg-gold-100');
-          logo.classList.add('text-6xl');
-          logo.classList.remove('text-4xl');
-        }
-      });
     };
-  }, [router]);
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [router, setUserType]);
 
   return (
     <div className="relative">

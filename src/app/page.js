@@ -25,12 +25,11 @@ export default function Page() {
   };
 
   useEffect(() => {
-    return () => {
-      let cookie = getUserTypeCookie();
-      if (cookie === 'VIP' || cookie === 'NIP') {
-        router.push('/home');
-      }
-    };
+    let cookie = getUserTypeCookie();
+    console.log('COOKIE', cookie);
+    if (cookie === 'VIP' || cookie === 'NIP') {
+      router.push('/home');
+    }
   }, [router]);
 
   return (
