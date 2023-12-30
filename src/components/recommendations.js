@@ -85,18 +85,18 @@ export default function Recommendations() {
       <h3 className="uppercase text-3xl md:text-6xl font-bold text-center">
         Recommendations
       </h3>
-      <p className="px-8 md:px-[80px] mx-auto uppercase font-medium text-lg md:text-2xl mb-5 mt-10">
+      <p className="px-8 md:px-[120px] mx-auto uppercase font-medium text-lg md:text-2xl mb-5 mt-10">
         Where to eat and drink
       </p>
-      <div className="px-8 md:px-[80px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="px-8 md:px-[120px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {dinnerRecs.map((rec) => {
           return <Card key={rec.link} card={rec} />;
         })}
       </div>
-      <p className="px-8 md:px-[80px] mx-auto uppercase font-medium text-lg md:text-2xl mb-5 mt-10">
+      <p className="px-8 md:px-[120px] mx-auto uppercase font-medium text-lg md:text-2xl mb-5 mt-10">
         What to do
       </p>
-      <div className="px-8 md:px-[80px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="px-8 md:px-[120px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {toDoRecs.map((rec) => {
           return <Card key={rec.link} card={rec} />;
         })}
@@ -110,7 +110,7 @@ function Card({ card }) {
     <a
       target="_blank"
       href={card.link}
-      className="block w-full h-[400px] md:h-[616px] relative group p-6 transition-all"
+      className="block w-full h-[525px] relative group p-6 transition-all"
     >
       <div className="flex flex-col justify-between	relative z-20 h-full">
         <p className="md:opacity-0 group-hover:opacity-100 text-xl font-base leading-10">
