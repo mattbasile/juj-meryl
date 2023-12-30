@@ -250,7 +250,7 @@ export default function Home() {
         <div className="grid grid-cols-1 mt-0 md:mt-11 md:grid-cols-2">
           <div className="border-r  border-gold-500 py-12 md:py-[74px]">
             <img
-              className="max-w-[400px] mx-auto my-4"
+              className="w-[220px] md:w-[400px] mx-auto my-4"
               src={CrateAndBarrelLogo.src}
             ></img>
 
@@ -264,7 +264,7 @@ export default function Home() {
           </div>
           <div className="border-r  border-gold-500 py-12 md:py-[74px]">
             <svg
-              className="max-w-[350px] mx-auto my-4"
+              className="w-[200px] md:w-[350px] mx-auto my-4"
               data-name="Zola Logo"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1831.769 280.914"
