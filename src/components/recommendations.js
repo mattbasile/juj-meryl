@@ -8,6 +8,8 @@ import RebelRebelImage from '../../public/images/rebelrebel.webp';
 import ICAImage from '../../public/images/ica.webp';
 import FenwayImage from '../../public/images/fenway.webp';
 import PorterSquareImage from '../../public/images/porter-square.webp';
+import IsabellaStewartGardnerMuseumImage from '../../public/images/IsabellaStewartGardenerMuseumMainLobby.webp';
+import BeaconHillImage from '../../public/images/beacon.webp';
 
 export default function Recommendations() {
   const dinnerRecs = [
@@ -65,13 +67,13 @@ export default function Recommendations() {
       name: 'Beacon Hill',
       link: 'https://www.boston.gov/neighborhood/beacon-hill',
       copy: 'The cutest Boston-proper neighborhood.',
-      image: PammysImage.src,
+      image: BeaconHillImage.src,
     },
     {
       name: 'Isabella Stewart Gardner Museum',
       link: 'https://www.gardnermuseum.org/',
       copy: 'Home of the heist',
-      image: Row34Image.src,
+      image: IsabellaStewartGardnerMuseumImage.src,
     },
     {
       name: 'Porter Square Books',
