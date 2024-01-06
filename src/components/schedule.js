@@ -84,7 +84,7 @@ export default function schedule({ userType }) {
                     target="_blank"
                     href={item.googleLink}
                     className={`${
-                      item.title === 'Welcome Party' ? 'mt-6' : 'mt-6 xl:mt-12'
+                      item.title === 'Welcome Party' ? 'mt-6' : 'mt-6 lg:mt-12'
                     } hover:bg-gold-500 hover:text-gold-100 transition-colors  mx-auto inline-block uppercase font-bold text-sm md:text-base py-3 px-6 border border-gold-500`}
                   >
                     Directions
