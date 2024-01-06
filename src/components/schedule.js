@@ -59,7 +59,7 @@ export default function schedule({ userType }) {
 
       <div
         className={`grid grid-cols-1 mt-0 md:mt-11 ${
-          userType === 'VIP' ? 'md:grid-cols-3' : 'md:grid-cols-2'
+          userType === 'VIP' ? 'lg:grid-cols-3' : 'lg:grid-cols-2'
         }`}
       >
         {userType === 'VIP'
@@ -69,7 +69,7 @@ export default function schedule({ userType }) {
                   key={item.title}
                   className={`${
                     index !== 2 ? 'border-r  border-gold-500' : ''
-                  }  py-12 md:py-[74px] flex flex-col justify-between`}
+                  }  py-12 md:py-[74px] flex flex-col justify-start text-pretty`}
                 >
                   <h3 className="uppercase font-bold text-3xl">{item.title}</h3>
                   <div className="text-sm leading-6 mt-6">
@@ -83,7 +83,9 @@ export default function schedule({ userType }) {
                   <a
                     target="_blank"
                     href={item.googleLink}
-                    className="hover:bg-gold-500 hover:text-gold-100 transition-colors mt-6 mx-auto inline-block uppercase font-bold text-sm md:text-base py-3 px-6 border border-gold-500 "
+                    className={`${
+                      item.title === 'Welcome Party' ? 'mt-6' : 'mt-6 xl:mt-12'
+                    } hover:bg-gold-500 hover:text-gold-100 transition-colors  mx-auto inline-block uppercase font-bold text-sm md:text-base py-3 px-6 border border-gold-500`}
                   >
                     Directions
                   </a>
