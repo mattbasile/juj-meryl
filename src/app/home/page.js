@@ -159,12 +159,6 @@ export default function Home() {
             We’re getting married in Boston, the place where it all began. We
             can’t wait to celebrate with all of you.
           </p>
-          <a
-            href="#hotels"
-            className="inline-block uppercase font-bold text-sm md:text-base py-3 px-6 border border-gold-100 "
-          >
-            Book your room
-          </a>
         </div>
         <Line color="light" />
       </div>
