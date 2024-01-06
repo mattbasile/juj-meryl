@@ -90,7 +90,7 @@ export default function Recommendations() {
       <p className="px-8 md:px-[120px] mx-auto uppercase font-medium text-lg md:text-2xl mb-5 mt-10">
         Where to eat and drink
       </p>
-      <div className="px-8 md:px-[120px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="px-8 md:px-[120px] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
         {dinnerRecs.map((rec) => {
           return <Card key={rec.link} card={rec} />;
         })}
@@ -98,7 +98,7 @@ export default function Recommendations() {
       <p className="px-8 md:px-[120px] mx-auto uppercase font-medium text-lg md:text-2xl mb-5 mt-10">
         What to do
       </p>
-      <div className="px-8 md:px-[120px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="px-8 md:px-[120px] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
         {toDoRecs.map((rec) => {
           return <Card key={rec.link} card={rec} />;
         })}
@@ -118,15 +118,23 @@ function Card({ card }) {
         <p className="md:opacity-0 group-hover:opacity-100 text-xl font-base leading-10">
           {card.copy}
         </p>
-        <p className="uppercase text-2xl md:text-4xl font-bold 	">{card.name}</p>
+        <p className="uppercase text-2xl  font-bold">{card.name}</p>
       </div>
       <div className="absolute inset-0 w-full h-full group">
         <div className="absolute inset-0 w-full h-full bg-black/40 z-10 group-hover:bg-black/50"></div>
-        <img
-          className="absolute inset-0 w-full h-full saturate-100 md:saturate-0 group-hover:saturate-100	transition-[saturate]"
-          src={card.image}
-          alt=""
-        />
+        {card.name === 'Institute of Contmporary Art' ? (
+          <img
+            className="object-fit absolute inset-0 w-full h-full saturate-100 md:saturate-0 group-hover:saturate-100	transition-[saturate]"
+            src={card.image}
+            alt=""
+          />
+        ) : (
+          <img
+            className="object-cover xl:object-fit absolute inset-0 w-full h-full saturate-100 md:saturate-0 group-hover:saturate-100	transition-[saturate]"
+            src={card.image}
+            alt=""
+          />
+        )}
       </div>
     </a>
   );

@@ -17,7 +17,7 @@ export default function Home() {
     {
       name: 'The Revolution Hotel',
       link: 'https://therevolutionhotel.com/',
-      copy: 'Promo Code: 2904143.',
+      copy: 'Promo Code: 2904143',
     },
     {
       name: 'Marriott Copley Place',
@@ -40,7 +40,7 @@ export default function Home() {
     {
       question: 'How do I get there?',
       answer:
-        'While we will have parking available, we very much encourage Uber/Lyft. It’s a party, after all.',
+        'While parking will be available, we encourage taking Uber/Lyft. It’s a party, after all.',
     },
     {
       question: 'Is anything happening Sunday?',
@@ -221,7 +221,7 @@ export default function Home() {
               return (
                 <div
                   key={faq.question}
-                  className="flex flex-col justify-between px-8"
+                  className="flex flex-col justify-between px-8 text-pretty"
                 >
                   <p className="uppercase font-bold text-lg mb-4">
                     {faq.question}
@@ -250,10 +250,12 @@ export default function Home() {
         <div className="grid grid-cols-1 mt-0 md:mt-11 md:grid-cols-2">
           <div className="border-r  border-gold-500 py-12 md:py-[74px]">
             <img
-              className="w-[220px] md:w-[400px] mx-auto my-4"
+              className="px-0 md:px-8 w-[220px] md:w-[400px] mx-auto my-4"
               src={CrateAndBarrelLogo.src}
             ></img>
-
+            <p className="px-8 md:px-0  md:w-[400px] mx-auto leading-6 mt-6">
+              For our Alison Roman - inspired dinner parties
+            </p>
             <a
               target="_blank"
               href="https://www.crateandbarrel.com/gift-registry/juliana-rordorf-and-meryl-hayes/r6824372"
@@ -264,7 +266,7 @@ export default function Home() {
           </div>
           <div className="border-r  border-gold-500 py-12 md:py-[74px]">
             <svg
-              className="w-[200px] md:w-[350px] mx-auto my-4"
+              className="px-0 md:px-8 w-[200px] md:w-[350px] mx-auto my-4"
               data-name="Zola Logo"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1831.769 280.914"
@@ -276,6 +278,9 @@ export default function Home() {
                 data-name="Layer 1"
               ></path>
             </svg>
+            <p className="px-8 md:px-0 md:w-[400px] mx-auto leading-6 mt-6">
+              For our Anthony Bourdain - inspired travels
+            </p>
             <a
               target="_blank"
               href="https://www.zola.com/registry/merylandjuliana"
