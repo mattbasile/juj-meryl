@@ -6,7 +6,7 @@ export default function schedule({ userType }) {
       title: 'Welcome Party',
       location: 'Bostonia Public House',
       address: '131 State St, Boston, MA 02109',
-      time: '7:30 - 10:00pm',
+      time: 'November 1st from 7:30 - 10:00pm',
       googleLink: 'https://maps.app.goo.gl/P8t4bFwLmZ4AovqU7',
       blurb:
         'The only thing we like more than eating and drinking is eating and drinking with the people we love. Join us for booze & bites and roasts & toasts (speeches, not food) to kick off the weekend.',
@@ -15,7 +15,7 @@ export default function schedule({ userType }) {
       title: 'Ceremony & Reception',
       location: 'SoWa Power Station',
       address: '550 Harrison Ave, Boston, MA 02118',
-      time: '6:00 - 11:00pm',
+      time: 'November 2nd from 6:00 - 11:00pm',
       googleLink: 'https://maps.app.goo.gl/ZbHFuqZB24vMdyp77',
       blurb:
         'Ceremony begins promptly at 6 pm - please don’t show up on Juj time. We don’t think this needs any more description. Our only ask is that you bring it for the hora.',
@@ -24,7 +24,7 @@ export default function schedule({ userType }) {
       title: 'Afterparty',
       location: 'Mezzanine at SoWa',
       address: '550 Harrison Ave, Boston, MA 02118',
-      time: '11:00pm - 1:00am',
+      time: 'November 2nd from 11:00pm - 1:00am',
       googleLink: 'https://maps.app.goo.gl/ZbHFuqZB24vMdyp77',
       blurb:
         "Juj wants an after party that screams BIG GAY DISCO. Meryl wants to replicate a night at Barbarella (her favorite Austin bar). Luckily they're one in the same.",
@@ -35,7 +35,7 @@ export default function schedule({ userType }) {
       title: 'Ceremony & Reception',
       location: 'SoWa Power Station',
       address: '550 Harrison Ave, Boston, MA 02118',
-      time: '6:00 - 11:00pm',
+      time: 'November 2nd from 6:00 - 11:00pm',
       googleLink: 'https://maps.app.goo.gl/ZbHFuqZB24vMdyp77',
       blurb:
         'Ceremony begins promptly at 6 pm - please don’t show up on Juj time. We don’t think this needs any more description. Our only ask is that you bring it for the hora.',
@@ -44,7 +44,7 @@ export default function schedule({ userType }) {
       title: 'Afterparty',
       location: 'Mezzanine at SoWa',
       address: '550 Harrison Ave, Boston, MA 02118',
-      time: '11:00pm - 1:00am',
+      time: 'November 2nd from 11:00pm - 1:00am',
       googleLink: 'https://maps.app.goo.gl/ZbHFuqZB24vMdyp77',
       blurb:
         'Juj wants an after party that screams BIG GAY DISCO. Meryl wants to replicate a night at Barbarella (her favorite Austin bar).',

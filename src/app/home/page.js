@@ -248,7 +248,7 @@ export default function Home() {
               src={CrateAndBarrelLogo.src}
             ></img>
             <p className="px-8 md:px-0  md:w-[400px] mx-auto leading-6 mt-6">
-              For our Alison Roman - inspired dinner parties
+              For our dinner parties inspired by Alison Roman
             </p>
             <a
               target="_blank"
@@ -273,7 +273,7 @@ export default function Home() {
               ></path>
             </svg>
             <p className="px-8 md:px-0 md:w-[400px] mx-auto leading-6 mt-6">
-              For our Anthony Bourdain - inspired travels
+              For our travels inspired by Anthony Bourdain
             </p>
             <a
               target="_blank"
