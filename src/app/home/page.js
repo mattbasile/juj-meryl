@@ -26,7 +26,7 @@ export default function Home() {
     },
     {
       name: 'StayPineapple',
-      link: 'https://www.staypineapple.com/south-end-boston?selfbook=true&hotel=2187&startdate=2024-11-01&enddate=2024-11-03&group=HAYESRORDORFWED&utm_source=hayes-rordorf-wedding&utm_medium=referral&utm_campaign=group-sales-spb',
+      link: 'https://reservations.staypineapple.com/?chain=26225&hotel=2187&arrive=11-01-2024&depart=11-03-2024&group=HAYESRORDORFWED&configcode=rate&utm_source=hayes-and-rordorf-wedding&utm_medium=referral&utm_campaign=group-sales-spb',
       copy: 'Follow the link below to book our room block',
     },
   ];
