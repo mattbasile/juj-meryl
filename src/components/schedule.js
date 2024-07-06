@@ -15,7 +15,7 @@ export default function schedule({ userType }) {
       title: 'Ceremony & Reception',
       location: 'SoWa Power Station',
       address: '550 Harrison Ave, Boston, MA 02118',
-      time: 'November 2nd from 6:00 - 11:00pm',
+      time: 'November 2nd from 5:30 - 11:00pm',
       googleLink: 'https://maps.app.goo.gl/ZbHFuqZB24vMdyp77',
       blurb:
         'Ceremony begins promptly at 6 pm - please don’t show up on Juj time. We don’t think this needs any more description. Our only ask is that you bring it for the hora.',
@@ -35,7 +35,7 @@ export default function schedule({ userType }) {
       title: 'Ceremony & Reception',
       location: 'SoWa Power Station',
       address: '550 Harrison Ave, Boston, MA 02118',
-      time: 'November 2nd from 6:00 - 11:00pm',
+      time: 'November 2nd from 5:30 - 11:00pm',
       googleLink: 'https://maps.app.goo.gl/ZbHFuqZB24vMdyp77',
       blurb:
         'Ceremony begins promptly at 6 pm - please don’t show up on Juj time. We don’t think this needs any more description. Our only ask is that you bring it for the hora.',
