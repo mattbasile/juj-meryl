@@ -2,7 +2,6 @@ import './globals.css';
 import Head from 'next/head';
 export const metadata = {
   title: 'Meryl and Juliana',
-  description: 'They are getting hitched!',
 };
 
 export default function RootLayout({ children }) {
@@ -36,9 +35,7 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/favicon/manifest.json" />
         <meta name="theme-color" content="#ffffff" />
 
-        <title>
-          Meryl Hayes & Juliana Rordorf Wedding - Celebrate Love & Joy
-        </title>
+        <title>Meryl and Juliana</title>
         <meta
           name="description"
           content="Join us in celebrating the love and joy of Meryl Hayes and Juliana Rordorf's wedding. Discover their story, wedding details, and more on their official wedding website."
