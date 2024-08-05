@@ -2,6 +2,24 @@ import './globals.css';
 import Head from 'next/head';
 export const metadata = {
   title: 'Meryl and Juliana',
+  description:
+    "Join us in celebrating the love and joy of Meryl Hayes and Juliana Rordorf's wedding. Discover their story, wedding details, and more on their official wedding website.",
+  opeGraph: {
+    title: 'Meryl and Juliana',
+    image: 'https://merylandjuliana.com/sign-in.webp',
+    url: 'https://merylandjuliana.com/',
+    type: 'website',
+  },
+  author: 'Matt Basile',
+  keywords:
+    'Meryl Hayes, Juliana Rordorf, Meryl and Juliana wedding, wedding celebration, wedding details, wedding website',
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Meryl Hayes & Juliana Rordorf Wedding',
+    description:
+      "Join us in celebrating the love and joy of Meryl Hayes and Juliana Rordorf's wedding. Discover their story, wedding details, and more on their official wedding website.",
+    image: 'https://merylandjuliana.com/sign-in.webp',
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -33,45 +51,7 @@ export default function RootLayout({ children }) {
           href="/favicon/apple-icon-180x180.png"
         />
         <link rel="manifest" href="/favicon/manifest.json" />
-        <meta name="theme-color" content="#ffffff" />
 
-        <title>Meryl and Juliana</title>
-        <meta
-          name="description"
-          content="Join us in celebrating the love and joy of Meryl Hayes and Juliana Rordorf's wedding. Discover their story, wedding details, and more on their official wedding website."
-        />
-        <meta
-          name="keywords"
-          content="Meryl Hayes, Juliana Rordorf, Meryl and Juliana wedding, wedding celebration, wedding details, wedding website"
-        />
-        <meta name="author" content="Meryl Hayes and Juliana Rordorf" />
-        <meta
-          property="og:title"
-          content="Meryl Hayes & Juliana Rordorf Wedding"
-        />
-        <meta
-          property="og:description"
-          content="Join us in celebrating the love and joy of Meryl Hayes and Juliana Rordorf's wedding. Discover their story, wedding details, and more on their official wedding website."
-        />
-        <meta
-          property="og:image"
-          content="https://merylandjuliana.com/sign-in.webp"
-        />
-        <meta property="og:url" content="https://merylandjuliana.com/" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Meryl Hayes & Juliana Rordorf Wedding"
-        />
-        <meta
-          name="twitter:description"
-          content="Join us in celebrating the love and joy of Meryl Hayes and Juliana Rordorf's wedding. Discover their story, wedding details, and more on their official wedding website."
-        />
-        <meta
-          name="twitter:image"
-          content="https://merylandjuliana.com/sign-in.webp"
-        />
         <link rel="canonical" href="https://merylandjuliana.com/" />
       </Head>
       <body className="font-sweetsans">{children}</body>
