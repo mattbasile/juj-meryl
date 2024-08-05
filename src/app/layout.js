@@ -1,4 +1,6 @@
 import './globals.css';
+import signInImage from '../../public/images/sign-in.webp'; // Adjust the path as necessary
+
 import Head from 'next/head';
 export const metadata = {
   title: 'Meryl and Juliana',
@@ -6,7 +8,7 @@ export const metadata = {
     "Join us in celebrating the love and joy of Meryl Hayes and Juliana Rordorf's wedding. Discover their story, wedding details, and more on their official wedding website.",
   opeGraph: {
     title: 'Meryl and Juliana',
-    image: 'https://merylandjuliana.com/sign-in.webp',
+    image: signInImage.src,
     url: 'https://merylandjuliana.com/',
     type: 'website',
   },
@@ -18,7 +20,7 @@ export const metadata = {
     title: 'Meryl Hayes & Juliana Rordorf Wedding',
     description:
       "Join us in celebrating the love and joy of Meryl Hayes and Juliana Rordorf's wedding. Discover their story, wedding details, and more on their official wedding website.",
-    image: 'https://merylandjuliana.com/sign-in.webp',
+    image: signInImage.src,
   },
 };
 
