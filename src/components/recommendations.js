@@ -52,7 +52,7 @@ export default function Recommendations() {
   ];
   const toDoRecs = [
     {
-      name: 'Institute of Contmporary Art',
+      name: 'Institute of Contemporary Art',
       link: 'https://www.icaboston.org/',
       copy: 'A Juj rec.',
       image: ICAImage.src,
@@ -122,7 +122,7 @@ function Card({ card }) {
       </div>
       <div className="absolute inset-0 w-full h-full group">
         <div className="absolute inset-0 w-full h-full bg-black/40 z-10 group-hover:bg-black/50"></div>
-        {card.name === 'Institute of Contmporary Art' ? (
+        {card.name === 'Institute of Contemporary Art' ? (
           <img
             className="object-fit absolute inset-0 w-full h-full saturate-100 md:saturate-0 group-hover:saturate-100	transition-[saturate]"
             src={card.image}
